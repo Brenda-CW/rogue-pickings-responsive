@@ -1,0 +1,1 @@
+This was a project for learning HTML & CSS.  Upon finalizing, I am working on making the project responsive and updating and personalizing content.

@@ -1,0 +1,153 @@
+/***** BASE STYLES ****/
+body {
+    color: #2b2b2b;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/***  GRID SECTION***/
+.full-width {
+    height: auto;
+    margin: 0 auto;
+    overflow: auto;
+    width: 1204px;
+}
+
+.half-width {
+    float: left;
+    overflow: auto;
+    width: 600px;
+}
+
+/***** HEADER SECTION ****/
+header h1 {
+    font-weight: bold;
+    margin: 50px 0 20px 0px;
+    text-transform: uppercase;
+}
+
+header h1 span {
+    color: #77a466;
+    font-weight: bold;
+    margin: 50px 0 35px 0px;
+    text-transform: uppercase;
+}
+
+nav {
+    float: right;
+    margin: 35px 10px;
+}
+
+nav ul li{
+    display: inline-block;
+    
+}
+nav ul li a {
+    color: #77a466;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/**** MAIN SECTION *****/
+
+img {
+    border-top: 3px solid #77a466;
+    border-bottom: 3px solid #77a466;
+}
+
+#banner img#rogue-pickings-banner { 
+    margin-left: 25px;
+}
+
+/***** Welcome SECTION ****/
+
+#welcome h2 {
+    color:#77a466;
+    font-family: 'Montserrat', bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform:uppercase;
+}
+#welcome p {
+    font-size: 16px;
+    line-height: 160%;
+    margin-bottom: 35px;
+}
+
+/***** INFO SECTION ****/
+#info .full-width {
+    border-top: 1px solid #dedbdc;
+    border-bottom: 1px solid #dedbdc;
+}
+
+#info .third-width-specials {
+    border-right: 2px solid #dedbdc;
+    float: left;
+    height: 200px;
+    margin: 0px 15px;
+    overflow: auto;
+    width: 365px;
+}
+
+#info .third-width-reviews {
+    border-right: 2px solid #dedbdc; 
+    float: left;
+    height: 200px;
+    margin: 0px 15px;
+    overflow: auto;
+    width: 380px;
+}
+
+#info .third-width-contact {
+    float: left;
+    height: 200px;
+    margin: 0px 15px;
+    overflow: auto;
+    width: 365px;
+    
+}
+
+#info .third-width-contact p {
+    line-height: 170%;
+}
+
+#info h3 {
+    font-family:'Montserrat', bold; 
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+#info ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+#info ul li a {
+    color:#77a466;
+    font-size: 16px;
+    line-height: 200%;
+    text-decoration: none;
+}
+
+
+
+/***** FOOTER SECTION ****/
+#statement .full-width {
+    text-align: center;
+    height: 80px;
+}
+
+#statement h3 {
+    color:#000000;
+    text-transform: uppercase;
+}
+#statement h3 span {
+    color:#92b685;
+    font-family: 'Galada', cursive;
+    text-transform: lowercase;
+}
+
