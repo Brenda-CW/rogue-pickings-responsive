@@ -146,6 +146,7 @@ header nav ul {
     flex-flow: column nowrap;
     padding: 0;
     list-style: none;
+    line-height: 2;
 }
 
 /*
@@ -177,7 +178,7 @@ main {
 
 #banner {
   background-image: url("../img/rogue-pickings-banner.png");
-  background-size: contain;
+  background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #222;
@@ -187,7 +188,7 @@ main {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  height: 80px;
+  height: 150px;
   border-top: 3px solid #77a466;
   border-bottom: 3px solid #77a466;
   }
