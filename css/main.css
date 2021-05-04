@@ -287,8 +287,6 @@ main {
     text-decoration: none;
 }
 
-
-
 /***** FOOTER SECTION ****/
 #statement .content-wrapper {
     text-align: center;
@@ -307,10 +305,76 @@ main {
 /* ==========================================================================
                                   TABLET STYLES
    ========================================================================== */
-@media only screen and (min-width: 768px);
+@media only screen and (min-device-width: 768px) {
+  /***************   HEADER    ************/
 
+header .content-wrapper {
+  width: 100%;
+}
 
+.menu {
+flex: none;
+}
 
+header nav {
+  flex: none
+}
+
+header nav ul {
+  flex-flow: row nowrap;
+  margin-inline-start: 100px;
+  margin-inline-end: 100px;
+}
+
+header nav ul li {
+padding: 0px 20px;
+}
+
+/****************   INFO SECTION   **************/
+#info .specials {
+  width: 100%;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
+#info .specials ul {
+  width: 50%;
+}
+
+#info .reviews {
+  display: flex;
+  width: 100%;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+
+#info .reviews p {
+  margin-block-start: auto;
+  margin-left: 25px;
+  width: 50%;
+}
+
+#info .contact {
+  width: 100%;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
+#info .contact p {
+  width: 50%;
+}
+/*************** FOOTER STYLES **************/
+#statement h3 {
+  padding-top: 20px;
+}
+
+} /*This closes the Tablet Styles
 /* ==========================================================================
                                   DESKTOP STYLES
    ========================================================================== */
