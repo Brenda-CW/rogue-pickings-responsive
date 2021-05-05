@@ -387,10 +387,6 @@ main {
       flex-flow: nowrap
     }
 
-    header h1 {
-      /*margin-inline-start: 40px; */
-    } 
-
      .menu {
        width: 60%;
      }
