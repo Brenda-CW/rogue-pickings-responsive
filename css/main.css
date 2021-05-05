@@ -91,7 +91,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-
 /***** HEADER SECTION ****/
  header {
     display:flex;
@@ -184,15 +183,10 @@ main {
   background-color: #222;
 }
 #banner .content-wrapper {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
   height: 150px;
   border-top: 3px solid #77a466;
   border-bottom: 3px solid #77a466;
   }
-
 
 /***** Welcome SECTION ****/
 #welcome {
@@ -204,7 +198,9 @@ main {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin: 5px;
   padding: 10px;
+  text-align:center;
 }
 
 #welcome h2 {
@@ -214,6 +210,7 @@ main {
     margin: 10px 10px 20px 10px;
     text-transform:uppercase;
 }
+
 #welcome p {
     font-size: 16px;
     line-height: 160%;
@@ -232,33 +229,28 @@ main {
 }
 
 #info .specials {
-    /*border-right: 2px solid #dedbdc; */
     display:flex;
-    /* flex-flow: column nowrap;
+    flex-flow: wrap;
     justify-content: center;
-    align-items: flex-start;
-    height: 200px;  */
+    text-align: center;
     margin: 15px;
     padding-bottom: 10px;
-    /* overflow: auto; */
     border-bottom: 1px solid #dedbdc;
 }
 
 #info .reviews {
-    /* border-right: 2px solid #dedbdc; 
-    height: 200px;*/
-    margin: 15px;
-    padding-bottom: 10px;
-    /* overflow: auto; */
+    margin: 20px;
+    padding: 10px;
     border-bottom: 1px solid #dedbdc;
+    text-align:center;
 }
 
 #info .contact {
   display:flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align: center;
   margin: 15px;
-  /* height: auto;
-  overflow: auto; */
-  width: 330px;
 }
 
 #info .contact p {
@@ -302,92 +294,101 @@ main {
     font-family: 'Galada', cursive;
     text-transform: lowercase;
 }
+
 /* ==========================================================================
                                   TABLET STYLES
    ========================================================================== */
 @media only screen and (min-device-width: 768px) {
   /***************   HEADER    ************/
 
-header .content-wrapper {
-  width: 100%;
-}
+  header .content-wrapper {
+    width: 100%;
+  }
 
-.menu {
-flex: none;
-}
+  .menu {
+  flex: none;
+  }
 
-header nav {
-  flex: none
-}
+  header nav {
+    flex: none
+  }
 
-header nav ul {
-  flex-flow: row nowrap;
-  margin-inline-start: 100px;
-  margin-inline-end: 100px;
-}
+  header nav ul {
+    flex-flow: row nowrap;
+    margin-inline-start: 100px;
+    margin-inline-end: 100px;
+  }
 
-header nav ul li {
-padding: 0px 20px;
-}
+  header nav ul li {
+  padding: 0px 20px;
+  }
 
 /****************   INFO SECTION   **************/
-#info .specials {
-  width: 100%;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
-}
+  #info .specials {
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    text-align: left;
+  }
 
-#info .specials ul {
-  width: 50%;
-}
+  #info .specials ul {
+    width: 50%;
+  }
 
-#info .reviews {
-  display: flex;
-  width: 100%;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-  align-content: center;
-  align-items: center;
-}
+  #info .reviews {
+    display: flex;
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    text-align: left;
+  }
 
-#info .reviews p {
-  margin-block-start: auto;
-  margin-left: 25px;
-  width: 50%;
-}
+  #info .reviews p {
+    margin-block-start: auto;
+    margin-left: 25px;
+    width: 50%;
+  }
 
-#info .contact {
-  width: 100%;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
-}
+  #info .contact {
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    text-align: left;
+  }
 
-#info .contact p {
-  width: 50%;
-}
+  #info .contact p {
+    width: 50%;
+  }
 /*************** FOOTER STYLES **************/
-#statement h3 {
-  padding-top: 20px;
-}
-
+  #statement h3 {
+    padding-top: 20px;
+  }
 } /*This closes the Tablet Styles
 /* ==========================================================================
                                   DESKTOP STYLES
    ========================================================================== */
-   @media only screen and (min-width: 1200px) {
-     header .content-wrapper {
-       display: flex;
-       justify-content: space-between;
-       align-content: center;
-       flex-flow: nowrap
-     }
+    /***********    HEADER STYLES   **************/
+@media only screen and (min-width: 1200px) 
+  {
+    header {
+      width: 80%;
+    }
+
+    header .content-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      flex-flow: nowrap
+    }
 
     header h1 {
-      margin-inline-start: 40px;
+      /*margin-inline-start: 40px; */
     } 
 
      .menu {
@@ -397,17 +398,76 @@ padding: 0px 20px;
      .menu ul {
        margin-top: 36px;
      }
+     /*************   MAIN STYLES   *******************/
+     main {
+       display: flex;
+       flex-flow: column nowrap;
+       justify-content: flex-start;
+       align-content: center;
+       width: 80%;
+       margin: auto;
+     }
+    /*************    Welcome SECTION STYLES  ***************/
+    #welcome .content-wrapper {
+      justify-content: flex-start;
+      padding: 0px;
+      margin-top: 10px;
+      text-align: left;
+    }
+    
+    #welcome .content-wrapper h2 {
+      margin: 10px 10px 20px 0px;
+    }
 
+    #welcome .content-wrapper p {
+      margin: 10px 40px 35px 0px;
+    }
+
+   /*************    INFO SECTION STYLES  ***************/
+   #info .content-wrapper {
+     flex-flow: row nowrap;
    }
 
+   #info .specials {
+     flex-flow: column nowrap;
+     border-bottom: 0px;
+     margin-inline-start: 45px;
+     width: 30%;
+   }
 
+    #info .specials ul {
+      width: 70%;
+    }
 
+    #info .reviews {
+      flex-flow: column nowrap;
+      border-bottom: 0px;
+      border-right: 2px solid #dedbdc;
+      border-left: 2px solid #dedbdc;
+      width: 39%;
+    }
 
-/* ==========================================================================
+    #info .reviews p {
+      margin: 0px;
+      width: 80%;
+    }
+
+    #info .contact {
+      flex-flow: column nowrap;
+      width: 30%;
+      padding-inline-end: 20px;
+    }
+
+    #info .contact p {
+      width: 70%;
+      margin: 0px 10px;
+    }
+}/*This closes the Desktop styles
+  /* ==========================================================================
    Helper classes
    ========================================================================== */
 
-/*
+  /*
  * Hide visually and from screen readers
  */
 
