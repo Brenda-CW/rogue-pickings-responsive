@@ -415,11 +415,16 @@ main {
     }
 
     .branding {
-      width: 100%;
+      width: 40%;
+      text-align: left;
+      margin:0;
     }
     
+    .branding h1 {
+      border-bottom: none;
+    }
      .menu {
-       width: 100%;
+       width: 60%;
      }
 
      .menu ul {
@@ -436,7 +441,7 @@ main {
      }
     /*************    Welcome SECTION STYLES  ***************/
     .welcome .content-wrapper {
-      justify-content: center;
+      justify-content: flex-start;
       padding: 20px;
       margin-top: 0px;
       text-align: left;
