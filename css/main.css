@@ -103,12 +103,11 @@ body {
 
 .container {
   width: 90%;
-  margin: 0 auto;
+  margin: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  border: 1px solid #eee;
 }
 
 /***** HEADER SECTION ****/
@@ -169,17 +168,6 @@ header nav ul {
     list-style: none;
     line-height: 2;
 }
-
-/*
-header nav {
-    width: 60%; 
-}
-*/
-
-/*nav ul li{
-    display: inline-block; 
-}
-*/ 
 
 header nav ul li a {
     color: #77a466;
@@ -255,6 +243,10 @@ main {
   width: 100%;
 }
 
+.content-wrapper h3 {
+  padding-bottom: 15px;
+}
+
 #info .specials {
     display:flex;
     flex-flow: wrap;
@@ -315,7 +307,7 @@ main {
 #statement h3 {
     color:#000000;
     text-transform: uppercase;
-    padding-top: 20px;
+    padding: 20px;
 }
 
 #statement h3 span {
