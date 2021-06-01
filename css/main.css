@@ -201,7 +201,6 @@ main {
   width: 100%; 
 }
 
-
 /***** Welcome SECTION ****/
 .welcome {
   width: 100%;
@@ -439,6 +438,11 @@ main {
        width: 80%;
        margin: auto;
      }
+
+     .main-image {
+       width: 100%
+     }
+     
     /*************    Welcome SECTION STYLES  ***************/
     .welcome .content-wrapper {
       justify-content: flex-start;
