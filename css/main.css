@@ -95,6 +95,7 @@
 body {
     color: #2b2b2b;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
     /*display: flex;
     justify-content: center;
     align-items: center;
@@ -112,10 +113,10 @@ body {
 
 /***** HEADER SECTION ****/
  header {
-    display:flex;
+    /* display:flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     height: auto;
     margin: 0 auto;
     text-align: center;
@@ -144,23 +145,26 @@ header h1 span {
   align-items: center;
   flex-flow: wrap;
   width: 100%;
-} 
+}  */
 
 header nav {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-}  */
+padding: 10px 15px;
+}  
 
 header nav ul {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    flex-flow: column nowrap;
+    /* align-items: center; */
+    flex-flow: row wrap;
     padding: 0;
     margin: 0;
-    list-style: none;
-    line-height: 2;
+}
+
+header nav ul li {
+  list-style: none;
+  line-height: 2;
+  padding: 10px;
+  font-size: 1.25em;
 }
 
 header nav ul li a {
@@ -319,9 +323,9 @@ main {
     width: 100%;
   } */
 
-  header h1 {
+  /* header h1 {
     width: 75%;
-  }
+  } /*
 
   header nav {
     padding-bottom: 15px;
@@ -390,8 +394,9 @@ main {
 
     header { 
       display: flex;
-      justify-content: space-between;
-      align-content: center;
+      /*justify-content: space-between; 
+      align-content: center; */
+      align-items: center;
       flex-flow: wrap;
       /*width: 80%; */
       border-bottom: none;
@@ -400,10 +405,6 @@ main {
     header nav {
       padding: 10px 15px;
       width: 60%;
-    }
-
-    header nav ul {
-      font-size: 1.25em;
     }
 
     header nav ul li {
