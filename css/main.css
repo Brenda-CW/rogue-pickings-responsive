@@ -13,7 +13,7 @@
 
    html {
     color: #222;
-    font-size: 1em;
+    font-size: 16px;
     line-height: 1.4;
   }
   
@@ -95,19 +95,19 @@
 body {
     color: #2b2b2b;
     font-family: 'Montserrat', sans-serif;
-    display: flex;
+    /*display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
+    flex-flow: row wrap; */
 }
 
 .container {
   width: 90%;
-  margin: 20px;
-  display: flex;
+  margin: 0px auto;
+  /*display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: row wrap; */
 }
 
 /***** HEADER SECTION ****/
@@ -120,15 +120,7 @@ body {
     margin: 0 auto;
     text-align: center;
     border-bottom: 3px solid #77a466;
-    width: 100%;
-}
-
-header .content-wrapper {
-  width: 100%;
-}
-
-.branding {
-    text-align: center;
+    max-width: 100%;
 }
 
 header h1 {
@@ -136,6 +128,7 @@ header h1 {
     margin: 50px 0 20px 0px;
     text-transform: uppercase;
     border-bottom: 3px solid #77a466;
+    text-align: center;
 }
 
 header h1 span {
@@ -145,26 +138,27 @@ header h1 span {
     text-transform: uppercase;
 }
 
-.menu {
+/*.menu {
   display:flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: wrap;
   width: 100%;
-}
+} 
 
 header nav {
   display:flex;
   justify-content: center;
   align-items: center;
-}
+}  */
 
 header nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-flow: column nowrap;
     padding: 0;
+    margin: 0;
     list-style: none;
     line-height: 2;
 }
@@ -177,16 +171,16 @@ header nav ul li a {
     text-decoration: none;
 }
 
-.branding .nav {
+header h1 .nav {
     overflow: auto;
 }
 /**** MAIN SECTION *****/
 main {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   flex-flow: row wrap;
-  width: 100%;
+  /*width: 100%; */
 }
 
 .banner {
@@ -318,31 +312,23 @@ main {
 /* ==========================================================================
                                   TABLET STYLES
    ========================================================================== */
-@media only screen and (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   /***************   HEADER    ************/
 
-  header .content-wrapper {
+  /* header {
     width: 100%;
-  }
+  } */
 
-  .branding {
+  header h1 {
     width: 75%;
-    margin: auto;
-  }
-
-  .menu {
-  flex: none;
-  padding-bottom: 15px;
   }
 
   header nav {
-    flex: none
+    padding-bottom: 15px;
   }
 
   header nav ul {
     flex-flow: row nowrap;
-    margin-inline-start: 100px;
-    margin-inline-end: 100px;
   }
 
   header nav ul li {
@@ -400,45 +386,43 @@ main {
                                   DESKTOP STYLES
    ========================================================================== */
     /***********    HEADER STYLES   **************/
-@media only screen and (min-device-width: 1200px) {
-  .container {
-    /* max-width: 1200px; */
-  }  
+@media only screen and (min-width: 1200px) {
 
-    header {
-      width: 80%;
-      border-bottom: none;
-    }
-
-    header .content-wrapper {
+    header { 
       display: flex;
       justify-content: space-between;
       align-content: center;
-      flex-flow: wrap
+      flex-flow: wrap;
+      /*width: 80%; */
+      border-bottom: none;
     }
 
     header nav {
-      width: 100%;
+      padding: 10px 15px;
+      width: 60%;
+    }
+
+    header nav ul {
+      font-size: 1.25em;
     }
 
     header nav ul li {
       padding: 0px 10px;
     }
 
-    .branding {
+    header h1 {
       width: 40%;
       text-align: left;
       margin:0;
-    }
-    
-    .branding h1 {
+      padding: 30px 0px;
       border-bottom: none;
     }
-     .menu {
+
+    nav {
        width: 60%;
      }
 
-     .menu ul {
+     nav ul {
        margin-top: 36px;
      }
      /*************   MAIN STYLES   *******************/
@@ -447,7 +431,7 @@ main {
        flex-flow: column nowrap;
        justify-content: flex-start;
        align-content: center;
-       width: 80%;
+       /* width: 80%; */
        margin: auto;
      }
 
