@@ -401,9 +401,13 @@ main {
    ========================================================================== */
     /***********    HEADER STYLES   **************/
 @media only screen and (min-device-width: 1200px) {
-    
+  .container {
+    /* max-width: 1200px; */
+  }  
+
     header {
       width: 80%;
+      border-bottom: none;
     }
 
     header .content-wrapper {
@@ -411,6 +415,14 @@ main {
       justify-content: space-between;
       align-content: center;
       flex-flow: wrap
+    }
+
+    header nav {
+      width: 100%;
+    }
+
+    header nav ul li {
+      padding: 0px 10px;
     }
 
     .branding {
@@ -442,6 +454,11 @@ main {
      .main-image {
        width: 100%
      }
+
+     .main-image img {
+       border-bottom: 3px solid #77a466;
+       border-top: 3px solid #77a466;
+     }
      
     /*************    Welcome SECTION STYLES  ***************/
     .welcome .content-wrapper {
@@ -449,6 +466,7 @@ main {
       padding: 20px;
       margin-top: 0px;
       text-align: left;
+      border-top: none;
     }
     
     .welcome .content-wrapper h2 {
